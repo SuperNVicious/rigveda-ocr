@@ -1,0 +1,23 @@
+# Core deep learning (CUDA 11.8 prebuilt wheels)
+torch==2.2.0+cu118
+torchvision==0.17.0+cu118
+torchaudio==2.2.0+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Image & numeric
+numpy>=1.26.0
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Utilities
+regex
+tqdm>=4.66.0
+editdistance>=0.8.0
+
+# Web / app
+gradio>=4.31.0
+python-dotenv>=1.0.1
+
+# Optional: for LLM judge
+openai>=1.0.0
+scikit-learn>=1.4.0   # needed for TF-IDF in fidelity checker
